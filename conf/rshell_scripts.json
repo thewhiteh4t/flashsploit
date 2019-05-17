@@ -1,0 +1,50 @@
+{
+	"hta": {
+		"desc": "Get Reverse Shell by Abusing Microsoft HTML Apps (mshta)",
+		"sftp": 0,
+		"msf": 1,
+		"module": "exploit/windows/misc/hta_server",
+		"srv": 1,
+		"target": "0"
+	},
+	"certutil": {
+		"desc": "Get Reverse Shell by Abusing Certification Authority Utility (certutil)",
+		"sftp": 0,
+		"module": "exploit/multi/handler",
+		"msf": 1,
+		"srv": 0,
+		"target": "0"
+	},
+	"cscript": {
+		"desc": "Get Reverse Shell by Abusing Windows Script Host (csript)",
+		"sftp": 0,
+		"module": "exploit/multi/handler",
+		"msf": 1,
+		"srv": 0,
+		"target": "0"
+	},
+	"msiexec": {
+		"desc": "Get Reverse Shell by Abusing Windows Installer (msiexec)",
+		"sftp": 0,
+		"module": "exploit/multi/handler",
+		"msf": 1,
+		"srv": 0,
+		"target": "0"
+	},
+	"regsvr": {
+		"desc": "Get Reverse Shell by Abusing Microsoft Register Server Utility (regsvr32)",
+		"sftp": 0,
+		"module": "exploit/multi/script/web_delivery",
+		"msf": 1,
+		"srv": 1,
+		"target": "3"
+	},
+	"rundll": {
+		"desc": "Get Reverse Shell by Abusing Rundll32",
+		"sftp": 0,
+		"module": "exploit/windows/smb/smb_delivery",
+		"msf": 1,
+		"srv": 1,
+		"target": "0"
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"wifi_key_grabber": {
+		"desc": "Extracts All WiFi Passwords and Uploads xml to your SFTP Server",
+		"sftp": 1,
+		"msf": 0
+	},
+	"netinfo": {
+		"desc": "Extracts Network Configuration Information of Target System and Uploads to your SFTP Server",
+		"sftp": 1,
+		"msf": 0
+	},
+	"mimikatz": {
+		"desc": "Extracts Passwords and Other Critical Information using Mimikatz and Uploads to your SFTP Server",
+		"sftp": 1,
+		"msf": 0
+	}
+}
