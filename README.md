@@ -38,7 +38,7 @@ Flashsploit is an Exploitation Framework for Attacks using ATtiny85 HID Devices 
 
 * Change Wallpaper of Target Machine
 * Make Windows Unresponsive using a .bat Script (100% CPU and RAM usage)
-* Drop and Execute a File of your Choice, a ransomeware maybe? ;)
+* Drop and Execute a File of your Choice, a ransomware maybe? ;)
 * Disable Windows Defender Service on Target Machine
 
 ## Tested on
