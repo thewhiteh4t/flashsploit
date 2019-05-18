@@ -67,7 +67,11 @@ def win():
 		elif win_choice == '':
 			pass
 		elif win_choice == 'exit' or win_choice == 'quit':
-			subp.call(['systemctl', 'stop', 'ssh.service'])
+			distro = os.system('uname -r')
+			if 'ARCH' in distro:
+				subp.call(['systemctl', 'stop', 'sshd.service'])
+			else:
+				subp.call(['systemctl', 'stop', 'ssh.service'])
 			subp.call(['pkill', 'php'])
 			exit()
 		else:
@@ -79,5 +83,9 @@ try:
 	main()
 except KeyboardInterrupt:
 	print(R + '[-]' + C + ' Keyboard Interrupt.' + W)
-	subp.call(['systemctl', 'stop', 'ssh.service'])
+	distro = os.system('uname -r')
+	if 'ARCH' in distro:
+		subp.call(['systemctl', 'stop', 'sshd.service'])
+	else:
+		subp.call(['systemctl', 'stop', 'ssh.service'])
 	subp.call(['pkill', 'php'])
