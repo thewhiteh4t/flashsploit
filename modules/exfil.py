@@ -29,13 +29,7 @@ def exfil(win):
 		elif exfil_choice == '':
 			pass
 		elif exfil_choice == 'exit' or exfil_choice == 'quit':
-			distro = os.system('uname -r')
-			if 'ARCH' in distro:
-				subp.call(['systemctl', 'stop', 'sshd.service'])
-			else:
-				subp.call(['systemctl', 'stop', 'ssh.service'])
-			subp.call(['pkill', 'php'])
-			exit()
+			quit()
 		elif int(exfil_choice) <= len(exfil_scripts) - 1:
 			with open('conf/exfil_scripts.json', 'r') as json_file:
 				options = json.load(json_file)

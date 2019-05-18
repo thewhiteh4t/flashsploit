@@ -29,13 +29,7 @@ def misc(win):
 			elif misc_choice == '':
 				pass
 			elif misc_choice == 'exit' or misc_choice == 'quit':
-				distro = os.system('uname -r')
-				if 'ARCH' in distro:
-					subp.call(['systemctl', 'stop', 'sshd.service'])
-				else:
-					subp.call(['systemctl', 'stop', 'ssh.service'])
-				subp.call(['pkill', 'php'])
-				exit()
+				quit()
 			elif int(misc_choice) <= len(misc_scripts) - 1:
 				with open('conf/misc_scripts.json', 'r') as json_file:
 					options = json.load(json_file)

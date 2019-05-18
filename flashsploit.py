@@ -36,9 +36,7 @@ def main():
 		if choice == '1':
 			win()
 		elif choice == 'exit' or choice == 'quit':
-			subp.call(['systemctl', 'stop', 'ssh.service'])
-			subp.call(['pkill', 'php'])
-			exit()
+			quit()
 		else:
 			print('\n' + R + '[-]' + C + ' Invalid Input...' + W)
 			pass
@@ -67,25 +65,24 @@ def win():
 		elif win_choice == '':
 			pass
 		elif win_choice == 'exit' or win_choice == 'quit':
-			distro = os.system('uname -r')
-			if 'ARCH' in distro:
-				subp.call(['systemctl', 'stop', 'sshd.service'])
-			else:
-				subp.call(['systemctl', 'stop', 'ssh.service'])
-			subp.call(['pkill', 'php'])
-			exit()
+			quit()
 		else:
 			print('\n' + R + '[-]' + C + ' Invalid Input...' + W)
 			pass
 
-try:
-	banner()
-	main()
-except KeyboardInterrupt:
-	print(R + '[-]' + C + ' Keyboard Interrupt.' + W)
-	distro = os.system('uname -r')
+def quit():
+	distro = subp.Popen(['uname', '-r'], stdout = subp.PIPE)
+	distro = str(distro)
 	if 'ARCH' in distro:
 		subp.call(['systemctl', 'stop', 'sshd.service'])
 	else:
 		subp.call(['systemctl', 'stop', 'ssh.service'])
 	subp.call(['pkill', 'php'])
+	exit()
+
+try:
+	banner()
+	main()
+except KeyboardInterrupt:
+	print(R + '[-]' + C + ' Keyboard Interrupt.' + W + '\n')
+	quit()
