@@ -29,7 +29,11 @@ def exfil(win):
 		elif exfil_choice == '':
 			pass
 		elif exfil_choice == 'exit' or exfil_choice == 'quit':
-			subp.call(['systemctl', 'stop', 'ssh.service'])
+			distro = os.system('uname -r')
+			if 'ARCH' in distro:
+				subp.call(['systemctl', 'stop', 'sshd.service'])
+			else:
+				subp.call(['systemctl', 'stop', 'ssh.service'])
 			subp.call(['pkill', 'php'])
 			exit()
 		elif int(exfil_choice) <= len(exfil_scripts) - 1:

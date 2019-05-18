@@ -23,4 +23,8 @@ def sftp():
 		sftp.sftp_pass = reader[1].strip()
 
 	print(G + '[+]' + C + ' Starting SFTP Server...' + W)
-	subp.call(['systemctl', 'start', 'ssh.service'])
+	distro = os.system('uname -r')
+	if 'ARCH' in distro:
+		subp.call(['systemctl', 'start', 'sshd.service'])
+	else:
+		subp.call(['systemctl', 'start', 'ssh.service'])

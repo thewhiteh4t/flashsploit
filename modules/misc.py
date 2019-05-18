@@ -29,7 +29,11 @@ def misc(win):
 			elif misc_choice == '':
 				pass
 			elif misc_choice == 'exit' or misc_choice == 'quit':
-				subp.call(['systemctl', 'stop', 'ssh.service'])
+				distro = os.system('uname -r')
+				if 'ARCH' in distro:
+					subp.call(['systemctl', 'stop', 'sshd.service'])
+				else:
+					subp.call(['systemctl', 'stop', 'ssh.service'])
 				subp.call(['pkill', 'php'])
 				exit()
 			elif int(misc_choice) <= len(misc_scripts) - 1:

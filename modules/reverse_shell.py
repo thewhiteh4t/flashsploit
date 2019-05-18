@@ -30,7 +30,11 @@ def rshell(win):
 			elif rshell_choice == '':
 				pass
 			elif rshell_choice == 'exit' or rshell_choice == 'quit':
-				subp.call(['systemctl', 'stop', 'ssh.service'])
+				distro = os.system('uname -r')
+				if 'ARCH' in distro:
+					subp.call(['systemctl', 'stop', 'sshd.service'])
+				else:
+					subp.call(['systemctl', 'stop', 'ssh.service'])
 				subp.call(['pkill', 'php'])
 				exit()
 			elif int(rshell_choice) <= len(rs_scripts) - 1:
