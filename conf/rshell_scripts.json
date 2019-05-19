@@ -38,13 +38,5 @@
 		"msf": 1,
 		"srv": 1,
 		"target": "3"
-	},
-	"rundll": {
-		"desc": "Get Reverse Shell by Abusing Rundll32",
-		"sftp": 0,
-		"module": "exploit/windows/smb/smb_delivery",
-		"msf": 1,
-		"srv": 1,
-		"target": "0"
 	}
 }
