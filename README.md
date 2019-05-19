@@ -37,7 +37,11 @@ Flashsploit is an Exploitation Framework for Attacks using ATtiny85 HID Devices 
 
 #### Reverse Shells
 
-* Get Reverse Shell by Abusing Microsoft HTML Apps (mshta)
+* Get Reverse Shell by Abusing Microsoft HTML Apps (mshta) | YouTube : 
+
+[![Youtube](https://i.imgur.com/57JP6DJ.png)](https://www.youtube.com/watch?v=4DsEMGsZB94)
+
+
 * Get Reverse Shell by Abusing Certification Authority Utility (certutil)
 * Get Reverse Shell by Abusing Windows Script Host (csript)
 * Get Reverse Shell by Abusing Windows Installer (msiexec)
