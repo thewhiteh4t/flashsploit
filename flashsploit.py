@@ -72,7 +72,7 @@ def win():
 
 def quit():
 	distro = subp.Popen(['uname', '-r'], stdout = subp.PIPE)
-	distro = str(distro)
+	distro = distro.communicate()[0].decode()
 	if 'ARCH' in distro:
 		subp.call(['systemctl', 'stop', 'sshd.service'])
 	else:
