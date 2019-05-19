@@ -23,6 +23,8 @@ Flashsploit is an Exploitation Framework for Attacks using ATtiny85 HID Devices 
 #### Data Exfiltration
 
 * Extract all WiFi Passwords and Uploads an XML to SFTP Server
+Youtube : 
+[![Youtube](https://i.imgur.com/5P9QrLa.png)](https://www.youtube.com/watch?v=N8vR69Qqz60)
 * Extract Network Configuration Information of Target System and Uploads to SFTP Server
 * Extract Passwords and Other Critical Information using Mimikatz and Uploads to SFTP Server
 
