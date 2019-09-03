@@ -3,9 +3,24 @@
 <h4 align="center">Exploitation Framework for ATtiny85 HID Attacks</h4>
 
 <p align="center">
-<img src="https://img.shields.io/badge/Python-3-brightgreen.svg?style=plastic">
-<img src="https://img.shields.io/badge/ATtiny85-red.svg?style=plastic">
-<img src="https://img.shields.io/badge/Exploitation-red.svg?style=plastic">
+	<img src="https://img.shields.io/badge/Python-3-brightgreen.svg?style=plastic">
+	<img src="https://img.shields.io/badge/ATtiny85-red.svg?style=plastic">
+	<img src="https://img.shields.io/badge/Exploitation-red.svg?style=plastic">
+</p>
+
+<p align="center">
+	<a href="https://twitter.com/thewhiteh4t"><b>Twitter</b></a>
+	<span> - </span>
+	<a href="https://t.me/thewhiteh4t"><b>Telegram</b></a>
+	<span> - </span>
+	<a href="https://thewhiteh4t.github.io"><b>Blog</b></a>
+</p>
+
+<p align="center">
+  <br>
+  <b>Available in</b>
+  <br>
+  <img src="https://i.imgur.com/1wJVDV5.png">
 </p>
 
 Flashsploit is an Exploitation Framework for Attacks using ATtiny85 HID Devices such as Digispark USB Development Board, flashsploit generates Arduino IDE Compatible (.ino) Scripts based on User Input and then Starts a Listener in Metasploit-Framework if Required by the Script, in Summary : Automatic Script Generation with Automated msfconsole.
@@ -78,7 +93,15 @@ Flashsploit Depends upon 4 Packages which are Generally Pre-installed in Major P
 
 If you think I should still make an Install Script, Open an issue. 
 
-## Usage
+## Installation / Usage
+
+#### BlackArch Linux
+
+```bash
+pacman -S flashsploit
+```
+
+#### Kali Linux
 
 ```bash
 git clone https://github.com/thewhiteh4t/flashsploit.git 
