@@ -1,4 +1,4 @@
-<p align="center"><img src="https://i.imgur.com/USijxcr.png"></p>
+<p align="center"><img src="https://i.imgur.com/KoY1Y96.jpg"></p>
 
 <h4 align="center">Exploitation Framework for ATtiny85 HID Attacks</h4>
 
